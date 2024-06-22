@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Music Player</title>
+    <!--       
+____________________________________________________________________ -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label class="switch" id = 'darkModeSwitch'>
+        <input type="checkbox" name = 'dark'>
+        <span class="slider round"></span>
+      </label>
+<!--       
+____________________________________________________________________ -->
+
+    <h1 class='heading'>Music Player</h1>
+    <!--       
+____________________________________________________________________ -->
+    <div class='header'>
+        <!--       
+____________________________________________________________________ -->
+        <div class='allSong'>
+            <div class='song'></div>
+            <div class='filter'>
+                <div id="dropdown">
+                    <h2>Filter by Genre:</h2>
+                    <select name="Genre" id="Genre"></select>
+                </div>
+            </div>
+            <h2>All Songs</h2>
+            <div id='allSongs'></div>
+        </div>
+        <!--       
+____________________________________________________________________ -->
+        <div class='player'>
+            <div id='playerContent'>
+                <div id='playerPic'>
+                    <img id="songImage" src="">
+                </div>
+                <h id="songName"> </h>
+                <audio src="jj.com" preload="none" controls=""></audio>
+            </div>
+            <br /><br />
+            <div id='bt'>
+                <h id='hd1'> <= </h>
+                <h id='hd2'> => </h>
+                <br /><br /><br />
+                <h id='i'> Add to Playlist </h>
+            </div>
+        </div>
+        <!--       
+____________________________________________________________________ -->
+        <div class='playlist'>
+            <div>
+                <input type="text" id='searchBox' placeholder="Search..">
+                <h id='CPL'>Create Playlist</h>
+            </div>
+            <!--       
+____________________________________________________________________ -->
+            <div id='box'>
+                <h2 id='CurrentList'>Current Playlist</h2>
+                <ul id='playlistSongs'></ul>
+                <!--       
+____________________________________________________________________ -->
+                <h2 id = 'Allpl'>All Playlist</h2>
+                <div id='allPlaylist'></div>
+                <!--       
+____________________________________________________________________ -->
+            </div>
+        </div>
+    </div>
+    <!--       
+____________________________________________________________________ -->
+    <script src="script.js"></script>
+</body>
+</html>
