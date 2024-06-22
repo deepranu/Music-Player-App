@@ -1,0 +1,333 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+    
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/* 
+_________________________________________________________________________________________ */
+
+
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.4s ease;
+}
+/* 
+___________________________________________________________________________________________ */
+
+body.dark-mode
+ {
+    background-color: #333;
+    color: #913e3e;
+}
+
+
+/* 
+___________________________________________________________________________________________ */
+.slider {
+    font-size: 10px; /* Sets the font size of the text within the slider */
+    width: 110px; /* Sets the width of the slider */
+    text-align: right; /* Aligns the text content of the slider to the right */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+/* 
+___________________________________________________________________________________________ */
+.heading {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 36px;
+   
+}
+
+/* 
+___________________________________________________________________________________________ */
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* 
+___________________________________________________________________________________________ */
+.allSong, .player, .playlist {
+    /* background-color: #f7dfdf; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(72, 71, 71, 0.1);
+    padding: 20px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+/* 
+___________________________________________________________________________________________ */
+.filter {
+    margin-bottom: 20px;
+}
+
+/* 
+___________________________________________________________________________________________ */
+#dropdown h2 {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* 
+___________________________________________________________________________________________ */
+#dropdown select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* 
+___________________________________________________________________________________________ */
+#allSongs ul {
+    padding: 0;
+    margin: 0;
+}
+
+#allSongs li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+}
+
+#allSongs li:hover {
+    background-color: #f9f9f9;
+}
+
+#allSongs li .song-name {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+#allSongs li .song-artist {
+    display: block;
+    font-size: 14px;
+    color: #888;
+}
+
+/* 
+___________________________________________________________________________________________ */
+.player {
+    text-align: center;
+}
+
+#playerContent {
+    border: 2px solid #ccc; /* Border around image and song name */
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#playerPic {
+    margin-bottom: 10px;
+}
+
+#songImage {
+    max-width: 80%;
+    border: 20px solid #ccc;
+    border-radius: 10px;
+}
+
+#songName {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+#bt h {
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#bt h:hover {
+    color: #007BFF;
+}
+
+.playlist {
+    text-align: center;
+}
+
+#searchBox {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#CPL {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+#CPL:hover {
+    color: #007BFF;
+}
+
+#box {
+    text-align: left;
+}
+
+#playlistSongs {
+    list-style: none;
+    padding: 0;
+}
+
+#playlistSongs li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#playlistSongs li:last-child {
+    border-bottom: none;
+}
+
+.playlist-item {
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.playlist-item:hover {
+    color: #007BFF;
+}
+
+/* 
+___________________________________________________________________________________________ */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+/* 
+___________________________________________________________________________________________ */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* 
+___________________________________________________________________________________________ */
